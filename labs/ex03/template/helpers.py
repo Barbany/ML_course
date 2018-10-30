@@ -14,7 +14,7 @@ def load_data():
 
 def load_data_from_ex02(sub_sample=True, add_outlier=False):
     """Load data and convert it to the metric system."""
-    path_dataset = "height_weight_genders.csv"
+    path_dataset = "../../ex02/template/height_weight_genders.csv"
     data = np.genfromtxt(
         path_dataset, delimiter=",", skip_header=1, usecols=[1, 2])
     height = data[:, 0]

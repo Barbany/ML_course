@@ -39,12 +39,12 @@ def plot(data, mu, mu_old, out_dir):
     ax1 = fig.add_subplot(1, 2, 1)
     plot_cluster(data, mu_old, colors, ax1)
     ax1.scatter(mu_old[:, 0], mu_old[:, 1],
-                facecolors='none', edgecolors='y', s=80)
+                facecolors='y', edgecolors='y', s=80)
 
     ax2 = fig.add_subplot(1, 2, 2)
     plot_cluster(data, mu, colors, ax2)
     ax2.scatter(mu[:, 0], mu[:, 1],
-                facecolors='none', edgecolors='y', s=80)
+                facecolors='y', edgecolors='y', s=80)
 
     # matplotlib.rc('xtick', labelsize=5)
     # matplotlib.rc('ytick', labelsize=5)
@@ -99,4 +99,4 @@ def plot_image_compression(original_image, image, assignments, mu, k):
     # ax3.set_title("Histogram of clustered pixels.")
     plt.tight_layout()
     plt.savefig("image_compression")
-    plt.show()
+    plt.show();
